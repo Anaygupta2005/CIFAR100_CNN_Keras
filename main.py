@@ -71,7 +71,7 @@ model.summary()
 
 model.compile(loss='categorical_crossentropy', metrics=['accuracy'], optimizer='adam')
 
-history = model.fit(X_train, Y_train, batch_size=64, epochs=10, validation_data=(X_test, Y_test))
+history = model.fit(X_train, Y_train, batch_size=64, epochs=50, validation_data=(X_test, Y_test))
 
 plt.figure()
 plt.plot(history.history['loss'], 'black', linewidth=2.0)
